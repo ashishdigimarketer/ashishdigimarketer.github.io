@@ -61,7 +61,12 @@
 <!-- End of Google tag (gtag.js) -->
 <script type="application/ld+json" src="js/schema.js"></script>
 <script type="application/ld+json">
-{
+/**
+ * Combined Schema.org Person JSON-LD Data for Ashish Kumar
+ * This object can be embedded in an HTML <script type="application/ld+json"> tag
+ * or used within a JavaScript application.
+ */
+const ashishKumarPersonSchema = {
   "@context": "https://schema.org/",
   "@type": "Person",
   "name": "Ashish Kumar",
@@ -140,7 +145,7 @@
     }
   ],
   "email": "hello@ashish.website",
-  "description": "Ashish Kumar is an Indian digital marketer, entrepreneur, and trader born on July 20, 1994. He holds a Bachelor of Computer Applications degree from Sikkim Manipal University.",
+  "description": "Ashish Kumar is a digital marketer with over 8 years of experience in digital marketing.",
   "homeLocation": {
     "@type": "Place",
     "name": "Delhi"
@@ -149,7 +154,7 @@
     "@type": "Organization",
     "name": "Web Light Infotech"
   }
-}
+};
 </script>
 </head>
 <body id="digi">
@@ -198,5 +203,11 @@
 <script src="js/script.js"></script>
 <script src="js/effect.js"></script>
 <script src="js/style.js"></script>
+
+const script = document.createElement('script');
+script.setAttribute('type', 'application/ld+json');
+script.textContent = JSON.stringify(ashishKumarPersonSchema);
+document.head.appendChild(script);
+	
 </body>
 </html>
