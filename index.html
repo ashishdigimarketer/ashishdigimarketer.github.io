@@ -156,6 +156,12 @@ const ashishKumarPersonSchema = {
   }
 };
 </script>
+
+
+<script>	const script = document.createElement('script');
+script.setAttribute('type', 'application/ld+json');
+script.textContent = JSON.stringify(ashishKumarPersonSchema);
+document.head.appendChild(script);</script>
 </head>
 <body id="digi">
 
@@ -203,11 +209,6 @@ const ashishKumarPersonSchema = {
 <script src="js/script.js"></script>
 <script src="js/effect.js"></script>
 <script src="js/style.js"></script>
-
-const script = document.createElement('script');
-script.setAttribute('type', 'application/ld+json');
-script.textContent = JSON.stringify(ashishKumarPersonSchema);
-document.head.appendChild(script);
 	
 </body>
 </html>
