@@ -92,15 +92,3 @@ const ashishKumarPersonSchema = {
     "name": "Web Light Infotech"
   }
 };
-
-
-const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(schemaData);
-
-    // Append to the <head>
-    document.head.appendChild(script);
-}
-
-// Call the function immediately to inject the schema as soon as the file loads
-injectPersonSchema();
