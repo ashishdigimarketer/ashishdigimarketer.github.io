@@ -59,41 +59,35 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "Ashish Kumar",
-  "url": "https://ashish.website/"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://ashish.website/#website",
+      "name": "Ashish Kumar",
+      "url": "https://ashish.website/"
+    },
+    {
       "@type": "ProfilePage",
+      "@id": "https://ashish.website/#profilepage",
       "headline": "Ashish Kumar, Digital Marketer | Trader | Entrepreneur",
       "url": "https://ashish.website/",
-      "@id": "https://ashish.website/",
       "inLanguage": "en",
       "mainEntity": {
-        "@id": "https://ashish.website/"
+        "@id": "https://ashish.website/#person"
       },
       "isPartOf": {
-        "@type": "WebSite",
-        "name": "Ashish Kumar's Home Page",
-        "url": "https://ashish.website/",
-        "@id": "https://ashish.website/",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Ashish Kumar",
-          "url": "https://ashish.website/",
-          "@id": "https://ashish.website/"
-        }
+        "@id": "https://ashish.website/#website"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://ashish.website/#organization",
+        "name": "Ashish Kumar",
+        "url": "https://ashish.website/"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://ashish.website/",
+      "@id": "https://ashish.website/#person",
       "name": "Ashish Kumar",
       "birthDate": "1994-07-20",
       "gender": "Male",
@@ -162,10 +156,11 @@
         "https://ashishkumar.tech.blog/",
         "https://www.google.com/search?kgmid=/g/11yn9v8qp6"
       ],
-      "knowsLanguage": {
-        "@type": "Language",
-        "name": ["Hindi", "Bhojpuri", "English"]
-      },
+      "knowsLanguage": [
+        { "@type": "Language", "name": "Hindi" },
+        { "@type": "Language", "name": "Bhojpuri" },
+        { "@type": "Language", "name": "English" }
+      ],
       "jobTitle": [
         "Digital Marketer",
         "Professional Trader",
